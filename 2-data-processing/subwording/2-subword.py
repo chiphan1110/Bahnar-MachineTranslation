@@ -11,7 +11,7 @@ import sentencepiece as spm
 
 model = sys.argv[1]
 raw = sys.argv[2]
-subworded = raw + ".subword"
+subworded = sys.argv[3]
 
 print("Model:", model)
 print("Dataset:", raw)

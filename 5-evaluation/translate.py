@@ -7,14 +7,15 @@ import sys
 import ctranslate2
 import sentencepiece as spm
 
+
 # Set file paths
 source_file_path =  sys.argv[1] 
-target_file_path =  source_file_path + ".translated"
+target_file_path =  sys.argv[2]
 
-sp_source_model_path = sys.argv[2] 
-sp_target_model_path = sys.argv[3] 
+sp_source_model_path = sys.argv[3] 
+sp_target_model_path = sys.argv[4] 
 
-ct_model_path = sys.argv[4]
+ct_model_path = sys.argv[5]
 
 
 # Load the source SentecePiece model
